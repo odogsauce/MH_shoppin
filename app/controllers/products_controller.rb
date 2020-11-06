@@ -2,11 +2,13 @@ class ProductsController < ApplicationController
   skip_before_action :authenticate_user!
 
   def index
-    @teddies = Teddy.all
+    @products = Product.all
   end
 
   def show
-    @teddy = Teddy.find(params[:id])
+    @product = Product.find(params[:id])
   end
+
+  private
 
 end
