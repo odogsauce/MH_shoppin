@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+      <div class="col-sm-12 col-md-6 d-flex">
+        <div class="card-show-img">
+
+          <%= image_tag @product.photo %>
+        </div>
+
+
+        <div class="card-show">
+          <ul class="list-inline">
+            <li>
+              <a><h1><%= @product.title %></h1></a>
+            </li>
+            <li>
+              <a><%= @product.description %></a>
+            </li>
+            <li>
+              <a></a>
+           </li>
+            <li>
+              <a><%= @product.quantity %>
+              </a>
+            </li>
+            <li>
+              <a>
+                <select for='styledSelect1' class='custom-select'>
+                  <option value="0"  selected="selected">Size</option>
+                  <option value="1" selected="selected">S</option>
+                  <option value="2">M</option>
+                  <option value="3">L</option>
+                  <option value="4">XL</option>
+                </select>
+              </a>
+            </li>
+            <li>
+              <a><p><%= link_to  "Add to cart", "#", class: "btn btn-flat"%></p></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </div>
+</div>
