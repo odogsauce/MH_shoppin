@@ -16,7 +16,7 @@
               <a><%= @product.description %></a>
             </li>
             <li>
-              <a></a>
+              <a> <%= humanized_money_with_symbol(@product.price) %> </a>
            </li>
             <li>
               <a><%= @product.quantity %>
