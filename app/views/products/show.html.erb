@@ -34,7 +34,12 @@
               </a>
             </li>
             <li>
-              <a><p><%= link_to  "Add to cart", "#", class: "btn btn-flat"%></p></a>
+              <a>
+                <%= form_tag orders_path do %>
+                  <%= hidden_field_tag 'product_id', @product.id %>
+                  <%= submit_tag 'ADD TO CART', class: 'btn btn-flat' %>
+                <% end %>
+              </a>
             </li>
           </ul>
         </div>
