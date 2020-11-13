@@ -1,6 +1,9 @@
 class OrdersController < ApplicationController
+  require "pry-byebug"
+  require 'stripe'
 
   def create
+
     product = Product.find(params[:product_id])
     order  = Order.create!(product: product, amount: product.price, state: 'pending', user: current_user)
 
@@ -8,7 +11,7 @@ class OrdersController < ApplicationController
       payment_method_types: ['card'],
       line_items: [{
         name: product.title,
-        images: [product.photo_url],
+        images: product.photo,
         amount: product.price_cents,
         currency: 'eur',
         quantity: 1
