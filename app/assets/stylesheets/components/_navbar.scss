@@ -1,6 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: #E0CDA9;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -8,7 +8,8 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  height: 70px;
+  width: 70px;
 }
 
 .fa-user {
@@ -17,10 +18,19 @@
  padding: 10px;
 
   &:hover {
-      color: red;
+      color: grey;
     }
 }
 
+.nav-motto {
+  font-size: 14px;
+}
 
+.nav-motto img {
+  height:15px;
+  width: 15px;
+}
 
-.dropdown-menu {}
+.nav-item {
+  font-size: 1.25rem;
+}
