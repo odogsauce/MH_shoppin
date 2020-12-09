@@ -1,9 +1,7 @@
 class OrdersController < ApplicationController
   require "pry-byebug"
-  require 'stripe'
 
   def create
-
     product = Product.find(params[:product_id])
     order  = Order.create!(product: product, amount: product.price, state: 'pending', user: current_user)
 
@@ -11,8 +9,8 @@ class OrdersController < ApplicationController
       payment_method_types: ['card'],
       line_items: [{
         name: product.title,
-        images: product.photo,
         amount: product.price_cents,
+        # Amount in cents
         currency: 'eur',
         quantity: 1
       }],
@@ -22,6 +20,10 @@ class OrdersController < ApplicationController
 
     order.update(checkout_session_id: session.id)
     redirect_to new_order_payment_path(order)
+  end
+
+  def show
+    @order = current_user.orders.find(params[:id])
   end
 
 end
