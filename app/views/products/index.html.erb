@@ -4,7 +4,7 @@
     <% @products.each do |product| %>
       <div class="card-trip">
         <%= link_to product_path(product) do %>
-          <%= image_tag product.photo %>
+          <%= cl_image_tag product.photo.key %>
             <div class="card-trip-infos">
               <div>
                <h2><%= product.title %></h2>
@@ -16,3 +16,4 @@
     <% end %>
   </div>
 </div>
+
