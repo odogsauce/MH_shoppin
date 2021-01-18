@@ -1,4 +1,12 @@
 
+<div class="banner" style="background-image: url(https://res.cloudinary.com/dwopswmlt/image/upload/v1607528254/sunbeach_sgwxqn.jpg);">
+  <div class="container">
+    <h1><%= image_tag "logo.png", class: "logo-mh" %> <strong>TO CREATIVE PEOPLE</strong></h1>
+    <a><%= link_to 'SHOP NOW', root_path, class: "btn btn-warning" %></a>
+  </div>
+</div>
+
+
 <div class="container">
   <div class="row">
     <% @products.each do |product| %>
@@ -16,4 +24,3 @@
     <% end %>
   </div>
 </div>
-

@@ -19,3 +19,17 @@
   opacity: 0.6;
   transition: opacity 0.3s ease;
 }
+
+.btn-warning {
+  padding: 10px;
+  padding-right: 35px;
+  padding-left: 35px;
+  transition: opacity 0.3s ease;
+
+}
+
+.btn-warning:hover {
+  background: black;
+  color: white;
+  border-color: black;
+}
