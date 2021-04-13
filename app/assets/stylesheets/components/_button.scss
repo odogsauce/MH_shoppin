@@ -3,11 +3,13 @@
   padding: 8px 24px;
   background: #3F784C;
   transition: background 0.3s ease;
+  border-radius: 50px;
 }
 
 .btn-flat:hover {
   background: black;
   color: white;
+  border-color: black;
 }
 
 .btn-ghost {
@@ -18,4 +20,18 @@
   font-weight: lighter;
   opacity: 0.6;
   transition: opacity 0.3s ease;
+}
+
+.btn-primary {
+  background: #3F784C;
+  border-color: #3F784C;
+  margin-top: 35px;
+  padding: 8px 24px;
+  border-radius: 50px;
+}
+.btn-primary:hover {
+  background: black;
+  color: white;
+  border-color: black;
+
 }
