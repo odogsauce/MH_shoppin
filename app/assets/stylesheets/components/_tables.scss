@@ -1,0 +1,29 @@
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-bottom: 55px;
+  border-color: black;
+   color: black;
+}
+
+th, td {
+  padding: 15px;
+}
+
+th {
+  text-align: left;
+}
+
+table {
+  border-spacing: 5px;
+  width: 100px;
+}
+
+i {
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 13px;
+  color:grey;
+}

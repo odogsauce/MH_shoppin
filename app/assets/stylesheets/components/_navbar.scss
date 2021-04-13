@@ -1,6 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: #E0CDA9;
+  background: #f3a552;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -18,7 +18,7 @@
  padding: 10px;
 
   &:hover {
-      color: grey;
+      color: #397b71;
     }
 }
 
@@ -33,4 +33,29 @@
 
 .nav-item {
   font-size: 1.25rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  &:hover {
+      color: #397b71;
+    }
+}
+
+
+.dropdown-menu {
+  background-color: #f3a552;
+  color: black;
+}
+
+.dropdown-menu a {
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-item {
+  &:hover {
+    background-color: #f3a552;
+    color:#397b71
+    }
 }
