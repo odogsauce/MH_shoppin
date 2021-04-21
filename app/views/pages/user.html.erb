@@ -1,0 +1,30 @@
+<div class="container">
+  <h1>Mon Compte</h1>
+  <br>
+     <div class="cards">
+      <div class="card-category">
+        <i class="fas fa-box-open"></i><%= link_to "Mes commandes", "#" %>
+      </div>
+
+      <div class="card-category">
+        <i class="fas fa-box"></i><%= link_to "Mes retours", "#" %>
+      </div>
+
+      <div class="card-category">
+        <i class="fas fa-house-user"></i><%= link_to "Adresse de livraison", "#" %>
+      </div>
+      <div class="card-category">
+        <i class="fas fa-user-lock"></i><%= link_to "Changer le mot de passe", edit_user_registration_path %>
+      </div>
+      <div class="card-category">
+        <p><i class="fas fa-info-circle"></i><%= link_to "Besoin d'aide ?", contact_path %></p>
+      </div>
+      <div class="card-category">
+        <p><i class="fas fa-sign-out-alt"></i><%= link_to "Déconnexion",  destroy_user_session_path, method: :delete %></p>
+      </div>
+    </div>
+</div>
+
+
+
+
